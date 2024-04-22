@@ -1,1 +1,114 @@
-.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Paolo Llenares</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: #FFA07A;
+        }
+    
+        header {
+            background: #ff5758;
+            padding: 20px;
+            text-align: center;
+ 
+        }
+    
+        nav {
+            background: #00989d;
+            padding: 20px;
+            text-align: center;
+             
+        }
+    
+        footer {
+            background: #ff914d;
+            padding: 20px;
+            text-align: center;
+            
+        }
+    
+        .main {
+            display: flex;
+            flex: 1;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    
+        .section, .article {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .section {
+            background: #5371ff;
+            
+        }
+    
+        .article {
+            background: #ffbd59;
+             
+        }
+    
+        .aside {
+            background: #737373;
+            width: 250px; 
+            padding: 20px;
+            text-align: center;
+             
+        }
+    
+        @media all and (max-width: 550px) {
+            .main {
+                flex-direction: column;
+            }
+            .container {
+                flex-direction: row;
+            }
+            .section, .article, .aside {
+                width: auto;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <strong>Header</strong> 
+        </header>
+        <nav>
+            <strong>Navigation</strong> 
+        </nav>
+        <div class="main">
+            <div class="container">
+                <div class="section">
+                    <strong>Section</strong> 
+                </div>
+                <div class="article">
+                    <strong>Article</strong> 
+                </div>
+            </div>
+            <div class="aside">
+                <strong>Aside</strong> 
+            </div>
+        </div>
+        <footer>
+            <strong>Footer</strong> 
+        </footer>
+      
+</body>
+</html>
